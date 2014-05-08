@@ -43,7 +43,11 @@ have! I'm Matic Tomazevic a Big Explorer of the Big Map! </font></td>
 </table>
 </center>
 <head>
-<script align="right">
+
+<script>
+	
+	
+
 function startTime() {
     var today=new Date();
     var h=today.getHours();
@@ -52,6 +56,8 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('txt').innerHTML = h+":"+m+":"+s;
+    document.getElementById('txt').style.fontFamily="Courier New";
+    document.getElementById('txt').style.fontSize="larger";
     var t = setTimeout(function(){startTime()},500);
 }
 
