@@ -1,9 +1,9 @@
 
 <html>
 <head>
+
 <title>Big Map</title>
 </head>
-<body>
 <center><font face="courier new" size="8">Welcome to my website!</font>		
 <table align="left">
 <tr>
@@ -41,9 +41,33 @@ have! I'm Matic Tomazevic a Big Explorer of the Big Map! </font></td>
 <td><a href="mailto:matic.tomazevic@gmail.com"><img src="slike/contact.jpg" height="40" width="100"></a></td>
 </tr>
 </table>
+</center>
+<head>
+<script align="right">
+function startTime() {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML = h+":"+m+":"+s;
+    var t = setTimeout(function(){startTime()},500);
+}
 
+function checkTime(i) {
+    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
 
+<body onload="startTime()">
 
+<div id="txt"></div>
+
+</body>
+<center>
 
 
 <img src="slike/big_map.jpg" border="2">
@@ -53,21 +77,11 @@ have! I'm Matic Tomazevic a Big Explorer of the Big Map! </font></td>
 </tr>
 </table>
 </center>
-</body>
-
-<body>
 
 
 
-<p id="demo"></p>
 
-<button type="button" onclick="myFunction()" font="courier new">Date and time</button>
 
-<script>
-function myFunction()
-{
-document.getElementById("demo").innerHTML = Date();
-}
-</script>
+
 
 </body>
