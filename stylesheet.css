@@ -1,0 +1,48 @@
+p {
+	font-family: Courier;
+	font-size: 20px;
+}
+#welcome {
+	font-size: 40px;
+	text-align: center;
+	
+}
+#footer {
+	font-size: 20px;
+	text-align: bottom;
+	text-align:center;
+}
+#pic1 {
+	margin-left:300px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.home-row {
+	display: inline-block;
+	height:30px;
+	width:200px;
+	background-color:orange;
+	text-align:center;
+	border: 1px solid black;
+	border-radius: 4px;
+	
+}
+a {
+	color:black;
+	font-size: 20px;
+	font-family: Courier;
+	text-decoration:none;
+}
+.about {
+	text-align:center;
+}
+#home {
+	margin-left:350px;
+}
+body {
+	background-color:#FFFF99;
+}
+
+
+
+	
