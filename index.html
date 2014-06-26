@@ -1,100 +1,62 @@
-
+<!DOCTYPE html>
 <html>
-<head>
-<link rel="shortcut icon" type="image/x-ico" href="/slike/favicon.ico" />
+	<head>
+		<link rel="shortcut icon" type="image/x-ico" href="/slike/favicon.ico" />
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<title>Big Map</title>
+		<script>
+			function startTime() {
+			var today=new Date();
+			var h=today.getHours();
+			var m=today.getMinutes();
+			var s=today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('txt').innerHTML = h+":"+m+":"+s;
+			document.getElementById('txt').style.fontFamily="Courier New";
+			document.getElementById('txt').style.fontSize="larger";
+			var t = setTimeout(function(){startTime()},500);
+			}
 
-<title>Big Map</title>
-<script>
-confirm("Welcome to my website! Coming more soon.");
-</script>
+			function checkTime(i) {
+			if (i<10) {i = "0" + i};
+			return i;
+			}
+		</script>
+		
+		
+	</head>
+	<body onload="startTime()">
+		<div class="home-row" id="home">
+			<a href="index.html">Home</a>
+		</div>
+		<div class="home-row">
+			<a href="mailto:matic.tomazevic@gmail.com">Contact us</a>
+		</div>
+		<div class="home-row">
+			<a href="about.html">About</a>
+		</div>
+		<p id="welcome"><strong>Welcome to my website!</strong></p>		
 
-	
-	
-	
-</head>
-<center><font face="courier new" size="8">Welcome to my website!</font>		
-<table align="left">
-<tr>
-<td width="10%"><font face="courier new" size="4">In case you would like to know, what the Big Map really is,
-wait for 10 years and you will see a new operating sistem which everyone will
-have! I'm Matic Tomazevic a Big Explorer of the Big Map! </font></td>
-<br>
-<br>
+		<p>Hello! I'm Matic and this is my website. It's not much but it will come more soon. I really like programming and my dream is to work at Google in Zürich.  </p>
+		<br>
+		<br>
 
-
-</tr>
-
-</table>
-
-	
-</center>
-<table align="left">
-<br>
-<br>
-
-
-
-</table>
-<center>
-
-<table align="right">
-<br>
-<br>
-
-
-	
-<tr>
-<td><a href="index.html"><img src="slike/homebutton.jpg" height="40" width="50"></a></td>
-<br>
-<td><a href="mailto:matic.tomazevic@gmail.com"><img src="slike/contact.jpg" height="40" width="100"></a></td>
-</tr>
-</table>
-</center>
-<head>
-
-<script>
-	
-	
-
-function startTime() {
-    var today=new Date();
-    var h=today.getHours();
-    var m=today.getMinutes();
-    var s=today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML = h+":"+m+":"+s;
-    document.getElementById('txt').style.fontFamily="Courier New";
-    document.getElementById('txt').style.fontSize="larger";
-    var t = setTimeout(function(){startTime()},500);
-}
-
-function checkTime(i) {
-    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-</script>
-</head>
-
-<body onload="startTime()">
-
-<div id="txt"></div>
-
-</body>
-<center>
-
-
-<img src="slike/big_map.jpg" border="2">
-<table align="down">
-<tr>
-<td><font face="courier new" size="3" align="bottom"> © Big Map</font></td>
-</tr>
-</table>
-</center>
+		<div id="txt"></div>
 
 
 
 
 
+		<img id="pic1" src="slike/big_map.jpg"/>
+		
 
-</body>
+		<p id="footer">Big Map ®</p>
+		
+		
+
+
+
+
+	</body>
+</html>
