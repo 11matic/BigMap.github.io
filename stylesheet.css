@@ -18,13 +18,16 @@ p {
 	border-radius: 10px;
 }
 .home-row {
-	display: inline-block;
-	height:30px;
-	width:200px;
+	
+	height:55px;
+	width:700px;
 	background-color:orange;
-	text-align:center;
+	
 	border: 1px solid black;
 	border-radius: 4px;
+	margin-left: 350px;
+	
+	
 	
 }
 a {
@@ -36,11 +39,22 @@ a {
 .about {
 	text-align:center;
 }
-#home {
-	margin-left:350px;
-}
+
 body {
 	background-color:#FFFF99;
+}
+.2 {
+	
+	
+	margin-left:500px;
+}
+li {
+	display:inline;
+	position: relative;
+	margin-left: 80px;
+}
+a:hover {
+	color: red;
 }
 
 
