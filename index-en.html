@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-ico" href="/slike/favicon.ico" />
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<title>Big Map</title>
+		<script>
+			function startTime() {
+			var today=new Date();
+			var h=today.getHours();
+			var m=today.getMinutes();
+			var s=today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('txt').innerHTML = h+":"+m+":"+s;
+			document.getElementById('txt').style.fontFamily="Courier New";
+			document.getElementById('txt').style.fontSize="larger";
+			var t = setTimeout(function(){startTime()},500);
+			}
+
+			function checkTime(i) {
+			if (i<10) {i = "0" + i};
+			return i;
+			}
+		</script>
+		
+		
+	</head>
+	<body onload="startTime()">
+		<a id="sl" class="language" href="index.html">SL</a>
+			
+		<p class="language">|</p>
+			
+		<a class="language" href="index-en.html">EN</a>
+			
+		
+		<div class="home-row">		
+			<ul>
+				<li>
+					<a href="index-en.html">Home</a>
+				</li>
+				<li>
+					<a href="mailto:matic.tomazevic@gmail.com">Contact us</a>
+				</li>
+				<li>
+					<a href="about-en.html">About</a>
+				</li>
+			</ul>
+		</div>
+		<p id="welcome"><strong>Welcome to my website!</strong></p>		
+
+		<p>Hello! I'm Matic and this is my website. It's not much but it will come more soon. I really like programming and my dream is to work at Google in Zürich.  </p>
+		<br>
+		<br>
+
+		<div id="txt"></div>
+
+
+
+
+
+		<img id="pic1" src="slike/big_map.jpg"/>
+		
+
+		<p id="footer">Big Map ®</p>
+		
+		
+
+
+
+
+	</body>
+</html>
